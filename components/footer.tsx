@@ -5,7 +5,7 @@ import Button from "./Button"
 const Footer = () => {
   return (
     <footer className="flex flex-col md:flex-row justify-between dark:bg-slate-800 dark:text-white px-6 lg:px-20 3xl:px-0 relative z-30 py-6 shadow-lg shadow-blue-300 border-t-2 border-green-500">
-      <div className="p-5 logoimg flex items-center">
+      <div className="p-5 w-full md:w-auto logoimg flex flex-col items-center justify-center">
         <Link href="/">
           <Image src="/logo.png"
           alt="SportsBuddy Logo"
@@ -50,13 +50,12 @@ const Footer = () => {
       <div className="footer_container1 flex flex-col justify-center">
         <span className="px-2 py-4 border-b-2 border-green-500 dark:border-white font-bold text-green-500">Subscribe to Newsletter</span>
         <form className="py-6" name="f1">
-          <div className="newsletter-form flex flex-row rounded-full">
-              <input type="email" name="emailid" placeholder="Email Address" className="font-bold px-4 py-2 outline-none bg-transparent border-2 border-green-500 dark:border-white placeholder:text-green-500 dark:placeholder:text-white text-green-500 dark:text-white rounded-l-full"/>
+          <div className="newsletter-form flex flex-col rounded-full">
+              <input type="email" name="emailid" placeholder="Email Address" className="font-bold w-full px-4 py-2 outline-none bg-transparent border-2 border-green-500 dark:border-white placeholder:text-green-500 dark:placeholder:text-white text-green-500 dark:text-white rounded-full"/>
               <Button 
                   type="button"
-                  title=""
-                  icon="/arrow2.gif"
-                  variant="border-0 rounded-r-full bg-black dark:bg-white w-auto"
+                  title="Subscribe"
+                  variant="mt-2 py-2 text-black font-bold border-0 rounded-full bg-black dark:bg-white"
               />
           </div>
         </form>

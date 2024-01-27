@@ -20,25 +20,27 @@ const Navbar = () => {
                     width={140}
                     height={140}/>
                 </Link>
-                <ul className={`absolute md:relative top-24 md:top-0 bg-white dark:bg-slate-500 md:dark:bg-transparent w-[90%] md:w-auto h-fit md:h-full gap-12 md:flex p-5 md:p-0 ${menuOpen ? 'block md:flex' : 'hidden md:flex bg-transparent'}`}>
+                <ul className={`absolute md:relative top-24 md:top-0 bg-white dark:bg-slate-500 md:dark:bg-transparent w-[90%] md:w-auto h-fit md:h-full gap-12 md:flex p-5 rounded-md md:rounded-none md:p-0 ${menuOpen ? 'block md:flex' : 'hidden md:flex bg-transparent'}`}>
                     {NAV_LINKS.map((link) => (
                         <Link href={link.href} key={link.key} className="hover:text-green-400 font-bold flex items-center justify-center cursor-pointer p-5 md:p-2 transition-all">
                             {link.label}
                         </Link>
                     ))}
                     <div className="gap-5 flex flex-col md:flex-row">
-                    <Button 
+                    <Link href="/login">
+                        <Button 
                         type="button"
                         title="Login"
                         icon="/user.svg"
-                        variant="border-0 font-bold hover:text-green-500 px-8 py-4 transition-all md:hover:bg-black md:shadow-sm md:hover:shadow-md md:hover:dark:shadow-xl md:hover:shadow-black md:hover:dark:shadow-white md:dark:shadow-black md:shadow-white md:bg-black md:text-white md:dark:bg-black rounded-full"
-                    />
-                    <Button 
+                        variant="border-0 font-bold hover:text-green-500 px-8 py-4 transition-all md:hover:bg-black md:shadow-sm md:hover:shadow-md md:hover:dark:shadow-xl md:hover:shadow-black md:hover:dark:shadow-white md:dark:shadow-black md:shadow-white md:bg-black md:text-white md:dark:bg-black rounded-full"/>
+                    </Link>
+                    <Link href="/register">
+                        <Button 
                         type="button"
                         title="Register"
                         icon="/user.svg"
-                        variant="border-0 font-bold hover:text-green-500 px-8 py-4 transition-all md:hover:bg-black md:shadow-sm md:hover:shadow-md md:hover:dark:shadow-xl md:hover:shadow-black md:hover:dark:shadow-white md:dark:shadow-black md:shadow-white md:bg-black md:text-white md:dark:bg-black rounded-full"
-                    />
+                        variant="border-0 font-bold hover:text-green-500 px-8 py-4 transition-all md:hover:bg-black md:shadow-sm md:hover:shadow-md md:hover:dark:shadow-xl md:hover:shadow-black md:hover:dark:shadow-white md:dark:shadow-black md:shadow-white md:bg-black md:text-white md:dark:bg-black rounded-full"/>
+                    </Link>
                     
                 </div>
                 </ul>

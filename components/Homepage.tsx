@@ -12,11 +12,13 @@ const Homepage = () => {
                         <h1 className="p-2 text-4xl text-center md:text-left font-bold text-black dark:text-white">Your Ultimate Sports Matching Platform</h1>
                         <p className="p-2 text-md text-justify text-gray-500 font-bold dark:text-gray-400">Discover the joy of sports like never before with Sports Buddy, the worlds largest sports matching site. Whether you are a sports enthusiast or a newbie looking to dip your toes into a new sport, we have got you covered. Start your journey today and find your perfect sports buddy!</p>
 
-                        <Button 
-                        type="button"
-                        title="Get Started"
-                        icon="/Rocketflying.svg"
-                        variant="m-2 px-2 py-2 w-full md:w-[30%] rounded-full border-0 font-bold bg-black dark:bg-black text-white cursor-pointer dark:invert dark:hover:bg-black dark:hover:text-white shadow-md hover:shadow-black dark:hover:shadow-black"/>
+                        <Link href="/register">
+                            <Button 
+                            type="button"
+                            title="Get Started"
+                            icon="/Rocketflying.svg"
+                            variant="m-2 px-2 py-2 w-full rounded-full border-0 font-bold bg-black dark:bg-black text-white cursor-pointer dark:invert dark:hover:bg-black dark:hover:text-white shadow-md hover:shadow-black dark:hover:shadow-black"/>
+                        </Link>
                     </div>
                     <div className="illustration p-10 md:w-[50%] flex items-center justify-center rounded-full">
                         <Image src="/illustrate1.svg"
