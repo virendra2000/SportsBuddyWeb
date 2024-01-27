@@ -16,8 +16,7 @@ const Homepage = () => {
                         type="button"
                         title="Get Started"
                         icon="/Rocketflying.svg"
-                        variant="m-2 px-2 py-2 w-[50%] rounded-full border-0 font-bold bg-black dark:bg-black text-white cursor-pointer dark:invert dark:hover:bg-black dark:hover:text-white shadow-md hover:shadow-black dark:hover:shadow-black"
-                    />
+                        variant="m-2 px-2 py-2 w-[50%] rounded-full border-0 font-bold bg-black dark:bg-black text-white cursor-pointer dark:invert dark:hover:bg-black dark:hover:text-white shadow-md hover:shadow-black dark:hover:shadow-black"/>
                     </div>
                     <div className="illustration p-10 md:w-[50%] flex items-center justify-center rounded-full">
                         <Image src="/illustrate1.svg"
