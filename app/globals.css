@@ -1,33 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    font-family: 'Lato', sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.service-box {
+  --border-size: 3px;
+  --border-angle: 0turn;
+  background-image: conic-gradient(from var(--border-angle), #3C4858, #3C4858 50%, #3C4858), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: bg-spin 3s linear infinite;
+          animation: bg-spin 3s linear infinite;
+  column-gap: 1rem;
+}
+
+@-webkit-keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+    border-radius: 10px;
   }
 }
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+    border-radius: 10px;
+  }
+}
+.service-box:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
