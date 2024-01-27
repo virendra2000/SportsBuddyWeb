@@ -79,7 +79,7 @@ const Footer = () => {
           </Link>
           <Link href='https://wa.me/message/CGOH3Q2CTWMXE1'>
             <div className="icon1 p-2 bg-white border-8 border-green-500 rounded-full">
-              <Image src="/whatsapp.gif"
+              <Image src="/Whatsapp.gif"
               alt="whatsapp"
               width={60}
               height={60}/>
