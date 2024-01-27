@@ -16,19 +16,19 @@ const Footer = () => {
       <div className="footer_link1">
         <span className="px-2 py-4 border-b-2 border-green-500 dark:border-white font-bold text-green-500">Learn More</span>
         <ul className="py-4 flex flex-col">
-          <Link href='/' className="px-2 py-4 text-black dark:text-white hover:text-green-500 dark:hover:text-green-500 font-bold">
+          <Link href='/about' className="px-2 py-4 text-black dark:text-white hover:text-green-500 dark:hover:text-green-500 font-bold">
             About
           </Link>
-          <Link href='/' className="px-2 py-4 text-black dark:text-white hover:text-green-500 dark:hover:text-green-500 font-bold">
+          <Link href='/explore' className="px-2 py-4 text-black dark:text-white hover:text-green-500 dark:hover:text-green-500 font-bold">
             Explore
           </Link>
           <Link href='/' className="px-2 py-4 text-black dark:text-white hover:text-green-500 dark:hover:text-green-500 font-bold">
             Event
           </Link>
-          <Link href='/' className="px-2 py-4 text-black dark:text-white hover:text-green-500 dark:hover:text-green-500 font-bold">
+          <Link href='/services' className="px-2 py-4 text-black dark:text-white hover:text-green-500 dark:hover:text-green-500 font-bold">
             Services
           </Link>
-          <Link href='/' className="px-2 py-4 text-black dark:text-white hover:text-green-500 dark:hover:text-green-500 font-bold">
+          <Link href='/contact' className="px-2 py-4 text-black dark:text-white hover:text-green-500 dark:hover:text-green-500 font-bold">
             Contact Us
           </Link>
         </ul>
@@ -36,10 +36,10 @@ const Footer = () => {
       <div className="footer_link2">
         <span className="px-2 py-4 border-b-2 border-green-500 dark:border-white font-bold text-green-500">Our Community</span>
         <ul className="py-4 flex flex-col">
-          <Link href='/' className="px-2 py-4 text-black dark:text-white hover:text-green-500 dark:hover:text-green-500 font-bold">
+          <Link href='/privacypolicy' className="px-2 py-4 text-black dark:text-white hover:text-green-500 dark:hover:text-green-500 font-bold">
             Privacy Policy
           </Link>
-          <Link href='/' className="px-2 py-4 text-black dark:text-white hover:text-green-500 dark:hover:text-green-500 font-bold">
+          <Link href='/termscondition' className="px-2 py-4 text-black dark:text-white hover:text-green-500 dark:hover:text-green-500 font-bold">
             Terms & Condition
           </Link>
           <Link href='/' className="px-2 py-4 text-black dark:text-white hover:text-green-500 dark:hover:text-green-500 font-bold">
